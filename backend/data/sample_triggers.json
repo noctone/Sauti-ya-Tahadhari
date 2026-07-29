@@ -1,0 +1,46 @@
+[
+  {
+    "id": "trg_0001",
+    "hazard_type": "drought",
+    "severity": "warning",
+    "location": "Marsabit County, Kenya",
+    "threshold_crossed": "3-month SPI below -1.5",
+    "timeframe": "next 5-7 days",
+    "recommended_action_summary": "Activate livestock destocking protocol",
+    "source": "icpac_documented_sample",
+    "issued_at": "2026-07-29T06:00:00Z"
+  },
+  {
+    "id": "trg_0002",
+    "hazard_type": "flood",
+    "severity": "emergency",
+    "location": "Lower Shabelle, Somalia",
+    "threshold_crossed": "River gauge above 6.2m flood stage",
+    "timeframe": "within 24 hours",
+    "recommended_action_summary": "Evacuate low-lying riverside settlements",
+    "source": "icpac_documented_sample",
+    "issued_at": "2026-07-29T09:15:00Z"
+  },
+  {
+    "id": "trg_0003",
+    "hazard_type": "food_insecurity",
+    "severity": "watch",
+    "location": "Karamoja, Uganda",
+    "threshold_crossed": "IPC Phase 3 projected within 60 days",
+    "timeframe": "next 60 days",
+    "recommended_action_summary": "Pre-position emergency food stocks and begin market monitoring",
+    "source": "icpac_documented_sample",
+    "issued_at": "2026-07-28T14:30:00Z"
+  },
+  {
+    "id": "trg_0004",
+    "hazard_type": "locust",
+    "severity": "warning",
+    "location": "Somali Region, Ethiopia",
+    "threshold_crossed": "Confirmed swarm sighting within 50km of cropland",
+    "timeframe": "next 3-5 days",
+    "recommended_action_summary": "Deploy ground control teams and issue farmer advisory",
+    "source": "manual_test",
+    "issued_at": "2026-07-29T11:00:00Z"
+  }
+]
