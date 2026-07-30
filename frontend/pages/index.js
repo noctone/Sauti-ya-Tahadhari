@@ -52,9 +52,12 @@ export default function Home() {
       <header style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 8 }}>
         <PulseDot />
         <h1 style={{ fontSize: '1.4rem', fontWeight: 700, margin: 0, letterSpacing: '-0.01em' }}>
-          Trigger &rarr; Understand &rarr; Act
+          Sauti ya Tahadhari
         </h1>
       </header>
+      <p>
+        Turning technical early warnings into clear, actionable guidance.
+      </p>
       <p style={{ color: 'var(--text-muted)', marginTop: 0, marginBottom: '2.5rem', fontSize: '0.95rem' }}>
         Turns a technical hazard trigger into a plain-language public warning and an officer
         action checklist &mdash; with the safety-critical facts locked to source, never paraphrased.
