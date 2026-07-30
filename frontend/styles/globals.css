@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --bg: #0B1120;
-  --panel: #131B2E;
-  --panel-border: #232D45;
-  --text: #EDEFF5;
-  --text-muted: #8B93A7;
-  --accent-amber: #E8A33D;
-  --accent-teal: #2DD4BF;
-  --danger: #E8543D;
+  --bg: #FAF6EF;
+  --panel: #FFFFFF;
+  --panel-border: #E4DCC8;
+  --panel-muted: #F3EEE1;
+  --text: #1F2A22;
+  --text-muted: #6B7568;
+  --accent-forest: #1F5C3F;
+  --accent-forest-dark: #163F2B;
+  --accent-amber: #D98E2B;
+  --accent-teal: #12857A;
+  --danger: #A6371F;
+  --danger-bg: rgba(166,55,31,0.08);
+  --teal-bg: rgba(18,133,122,0.08);
 }
 
 * {
@@ -37,7 +42,7 @@ a {
 
 ::selection {
   background: var(--accent-amber);
-  color: #0B1120;
+  color: var(--accent-forest-dark);
 }
 
 @media (prefers-reduced-motion: reduce) {
