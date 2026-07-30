@@ -1,19 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #FAF6EF;
+  --bg: #FAF6EE;
   --panel: #FFFFFF;
-  --panel-border: #E4DCC8;
-  --panel-muted: #F3EEE1;
-  --text: #1F2A22;
-  --text-muted: #6B7568;
+  --panel-border: #E6DDC6;
+  --panel-muted: #F3EDDD;
+  --text: #22291F;
+  --text-muted: #6E7566;
   --accent-forest: #1F5C3F;
   --accent-forest-dark: #163F2B;
+  --accent-olive: #6B7A3A;
+  --accent-clay: #B4642F;
   --accent-amber: #D98E2B;
-  --accent-teal: #12857A;
+  --accent-teal: #0F7A6E;
+  --accent-sky: #4C7C93;
   --danger: #A6371F;
-  --danger-bg: rgba(166,55,31,0.08);
-  --teal-bg: rgba(18,133,122,0.08);
+  --danger-bg: rgba(166,55,31,0.07);
+  --teal-bg: rgba(15,122,110,0.08);
 }
 
 * {
@@ -26,6 +29,10 @@ html, body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, .serif {
+  font-family: 'Fraunces', Georgia, serif;
 }
 
 .mono {
@@ -50,5 +57,63 @@ a {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+}
+/* ---------- Premium UI additions ---------- */
+
+body{
+  background:
+    linear-gradient(rgba(250,246,238,.90), rgba(250,246,238,.94)),
+    url('/hero-igad.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button{
+  transition:
+    transform .22s ease,
+    box-shadow .22s ease,
+    background .22s ease;
+}
+
+button:hover:not(:disabled){
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.16);
+}
+
+button:active:not(:disabled){
+  transform: translateY(-1px);
+}
+
+select{
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+
+select:hover{
+  border-color:var(--accent-forest);
+}
+
+select:focus{
+  box-shadow:0 0 0 4px rgba(31,92,63,.12);
+}
+
+.card{
+  backdrop-filter:blur(8px);
+  box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+.fade-in{
+  animation:fadeIn .45s ease;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(8px);
+  }
+  to{
+    opacity:1;
+    transform:none;
   }
 }
