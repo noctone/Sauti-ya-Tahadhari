@@ -235,7 +235,7 @@ export default function Home() {
             }}
           >
             <img
-              src="/hero-igad.jpg"
+              src="/igad-image.jpg"
               alt="IGAD Region"
               style={{
                 width: "100%",
